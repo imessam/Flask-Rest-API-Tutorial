@@ -19,6 +19,10 @@ api.add_resource(RegisterUser,"/register")
 
 
 if __name__ == "__main__":
-    
+
+    from db import db
+
+
+    db.init_app(app)
 
     app.run(port = 5000)
